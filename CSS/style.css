@@ -49,7 +49,7 @@ sup {
   font-style: italic;
 }
 
-.container {
+.tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -57,12 +57,22 @@ sup {
   margin: 30px;
 }
 
-#majortag {
+.majortag {
   background-color: #7f4f82;
   color: #fffbf2;
 }
 
-#minortag {
+.minortag {
   background-color: #d7a8c4;
   color: #fffbf2;
+}
+
+.table-of-contents {
+  border: 2px solid #7f4f82;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #fffbf2;
+  border-radius: 10px;
+  width: 50%;
+  
 }
