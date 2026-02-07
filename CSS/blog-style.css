@@ -73,6 +73,7 @@ sup {
   margin: 20px 0;
   background-color: #fffbf2;
   border-radius: 10px;
-  width: 50%;
-  
+  width: 350px;
+    max-width: 90%;
+
 }
