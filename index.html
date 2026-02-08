@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/blog-style.css"> <!---For the sake of the nav-bar--->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
     <title>Home - Mon Andrei Obillo</title>
 </head>
 <body>
-    <a href="Biography/biography.html">Go to Biography Page</a>
+    <nav>
+        <div class="nav-logo">
+            <p>Mon Andrei Obillo</p>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+        <label for="menu-toggle" class="menu-symbol">
+            <i class="ph ph-list"></i> </label>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Biography/biography.html">Biography</a>
+            <a href="Blog%20Stories%20Pages/blog-story-homepage.html">Blog Story</a>
+            <a href="mailto:obillo.monandrei@ue.edu.ph" id="contact-me" target="_blank">Contact Me</a>
+        </div>
+    </nav>
 </body>
 </html>
