@@ -20,7 +20,36 @@ body {
 h1 {
     font-family: "Spectral", "Georgia", "serif";
     color: #3b2349;
-    font-size: clamp(14px, 2vw, 2.5vw);
+    font-size: clamp(48px, 2vw, 4.5vw);
+    font-style: Italic;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Atkinson Hyperlegible Next", "Verdana", "sans-serif";
+    color: #3b2349;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    font-family: "atkinson Hyperlegible Next", "Verdana", "sans-serif";
+    box-sizing: border-box;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 16px;
+    margin: 24px 0;
+    border-radius: 2em;
+    color: #fffbf2;
+    background: #3b2349;
+}
+
+a:hover {
+    border: 1px solid #3b2349;
+    color: #3b2349;
+    background: #fffbf2;
 }
 
 nav {
@@ -44,6 +73,7 @@ nav p {
     font-style: italic;
     letter-spacing: 1.2px;
     text-align: left;
+    margin: 0;
 }
 
 .menu-checkbox {
@@ -139,14 +169,23 @@ a.contact-me:hover {
     background-color: #3b2349;
 }
 
+.section-text {
+    display: block;
+    width: 50%;
+    max-width: 80vh;
+    gap: 20px;
+}
+
 .purple-section {
     width: 100%;
     min-height: 92vh;
-    max-height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background: #3b2349;
+    padding: 10px;
 }
 
 .purple-section h1 {
@@ -160,9 +199,11 @@ a.contact-me:hover {
 .cream-section {
     width: 100%;
     min-height: 100vh;
-    max-height: 100vh;
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background: #fffbf2;
 }
 
@@ -178,7 +219,7 @@ a.contact-me:hover {
     color: #d9d9d9;
 }
 
-.purple-section.coming-soon h1 {
+.purple-section.coming-soon h1, .purple-section.coming-soon p {
     color: #d9d9d9;
 }
 
@@ -187,8 +228,7 @@ a.contact-me:hover {
     color: #575757;
 }
 
-.cream-section.coming-soon h1 {
-    font-size: clamp(14px, 2vw, 2.5vw);
+.cream-section.coming-soon h1, .cream-section.coming-soon p {
     color: #575757;
 }
 
@@ -204,7 +244,9 @@ a.contact-me:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 16px 0;
+    padding: 16px;
+    width: 30%;
+    max-width: 80%;
 }
 
 #start-page-text h1 {
@@ -215,7 +257,6 @@ a.contact-me:hover {
     line-height: 0.2;
     letter-spacing: 1px;
     font-style: italic;
-
 }
 
 #start-page-text h2 {
@@ -232,6 +273,7 @@ a.contact-me:hover {
     font-size: 18px;
     margin-bottom: 20px;
     color: #dcc3de;
+    line-height: 1.5;
 }
 
 #start-page img {
@@ -240,4 +282,84 @@ a.contact-me:hover {
     max-height: 80vh;
     object-fit: contain;
     display: block;
+}
+
+@media (max-width: 850px) {}
+
+#blogs {
+    flex-direction: column;
+    scroll-margin-top: 70px;
+}
+
+#blogs.section-text {
+    margin-top: 50px;
+}
+
+#blogs h1 {
+    text-align: center;
+}
+
+.blog-snippets {
+    display: flex;
+    flex: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+    width: fit-content;
+    gap: 30px;
+    padding: 20px;
+}
+
+a.blog-snippet-card {
+    display: block;
+    text-decoration: none;
+    flex: 0 0 300px;
+    width: 450px;
+    max-width: 60%;
+    height: auto;
+    background: #fffbf2;
+    color: #3b2349;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+a.blog-snippet-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid #7f4f82;
+}
+
+.blog-snippet-card img {
+    height: 250px;
+}
+
+.blog-snippet-text {
+    color: #3b2349;
+    padding: 20px;
+    display: block;
+    width: 100%;
+
+}
+
+.blog-snippet-text h2 {
+    font-family: "Spectral", "Georgia", serif;
+    font-size: 36px;
+    line-height: 0.8;
+    font-style: italic;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.blog-snippet-text p {
+    color: #3b2349;
+    font-family: "Atkinson Hyperlegible", "Verdana", "sans-serif";
+    font-size: 14px;
+}
+
+.read-more {
+    display: inline;
+    font-size: inherit;
+    color: #7f4f82;
 }
