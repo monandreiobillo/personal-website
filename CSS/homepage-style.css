@@ -175,7 +175,7 @@ a.contact-me {
     padding: 10px 16px;
     margin: 16px 0;
     border-radius: 2em;
-    color: #3b2349;
+    color: #3b2349 !important;
     background: #fffbf2;
 }
 
