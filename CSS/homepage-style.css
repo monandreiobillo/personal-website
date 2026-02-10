@@ -179,6 +179,10 @@ a.contact-me {
     background: #fffbf2;
 }
 
+a.contact-me:visited {
+    color: #3b2349;
+}
+
 a.contact-me:hover {
     border: 1px solid #fffbf2;
     color: #fffbf2;
