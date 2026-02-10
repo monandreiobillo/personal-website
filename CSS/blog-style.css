@@ -288,6 +288,7 @@ a#contact-me:hover {
     display: inline-block;
     margin-bottom: 10px;
     width: 100%;
+    max-width: 500px;
     break-inside: avoid;
     box-sizing: border-box;
     padding: 10px;
