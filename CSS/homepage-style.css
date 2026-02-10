@@ -142,6 +142,7 @@ a.contact-me:hover {
 .purple-section {
     width: 100%;
     min-height: 92vh;
+    max-height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -159,6 +160,7 @@ a.contact-me:hover {
 .cream-section {
     width: 100%;
     min-height: 100vh;
+    max-height: 100vh;
     box-sizing: border-box;
     display: block;
     background: #fffbf2;
