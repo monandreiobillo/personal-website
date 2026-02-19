@@ -67,6 +67,7 @@ sup {
 a {
     text-decoration: none;
     color: #7f4f82;
+    transition: background-color 0.3s ease-in-out;
 }
 
 a:visited { color: #3b2349; }
