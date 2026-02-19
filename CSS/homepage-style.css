@@ -72,6 +72,10 @@ a:hover {
     background: var(--cream);
 }
 
+i {
+    padding-right: 10px;
+}
+
 /* ======================================================
    LAYOUT PRIMITIVES
 ====================================================== */
@@ -199,7 +203,33 @@ footer p {
 }
 
 footer a {
+    font-family: var(--font-body);
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
     text-decoration: underline;
+    padding: 10px 16px;
+    margin: 24px 0;
+    border-radius: 2em;
+    color: var(--cream);
+    background: var(--purple);
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer a:visited {
+    color: var(--cream);
+}
+
+footer a:hover {
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    background: var(--cream);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* ======================================================
@@ -260,6 +290,36 @@ a.blog-snippet-card:hover {
     display: inline;
     font-size: inherit;
     color: var(--purple-light);
+}
+
+.favorite-cards {
+    display: block;
+    width: 50%;
+    max-width: 80vw;
+    padding: 10px;
+
+}
+
+.favorite-card-item {
+    width: 100% !important;
+    display: block;
+    padding: 20px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite-card-item i {
+    display: inline;
+    border-radius: 30px;
+    height: 20px;
+    font-size: 20px;
+    background: var(--cream);
+    border: 1px solid var(--purple);
+    padding: 16px;
+    color: var(--purple);
+    margin-right: 16px;
+    vertical-align: middle;
 }
 
 /* ======================================================

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="CSS/homepage-style.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
@@ -18,10 +19,11 @@
         <label for="menu-toggle" class="menu-symbol">
             <i class="ph ph-list"></i> </label>
         <div class="nav-links">
-            <a href="Biography/biography.html">About Me</a>
-            <a href="#blogs">Blogs</a>
-            <a href="Images/gallery.html">Gallery</a>
-            <a href="#contact-info" class="contact-me" target="_blank">Contact Me</a>
+            <a href="Biography/biography.html"><i class="bi bi-person"></i> About Me</a>
+            <a href="#blogs"><i class="bi bi-journal-text"></i> Blogs</a>
+            <a href="#my-favorites"><i class="bi bi-star"></i> Favorites</a>
+            <a href="Images/gallery.html"><i class="bi bi-images"></i> Gallery</a>
+            <a href="#contact-info" class="contact-me"><i class="bi bi-envelope"></i> Contact Me</a>
         </div>
     </nav>
     <div class="space-buffer">
@@ -32,7 +34,7 @@
             <br><h1>Mon Andrei</h1>
             <br>
             <p>A Student, Singer, Programmer, and Writer, all in one, pursuing BS Computer Science and singing with the University Chorale.</p>
-            <a href="#contact-info" class="contact-me">Contact Me</a>
+            <a href="#contact-info" class="contact-me"><i class="bi bi-envelope"></i> Contact Me</a>
         </div>
         <img src="Images/Homepage-Main-Image.png" alt="Homepage Image of Me">
     </div>
@@ -41,7 +43,7 @@
             <h1>About Me</h1>
             <p>I am <i>19 Years Old</i>, studying BS Computer Science at the University of the East - Manila. I am a DOST Scholar and a Singer of the UE Chorale.</p>
             <br>
-            <a href="Biography/biography.html">Read My Biography</a>
+            <a href="Biography/biography.html"><i class="bi bi-person"></i> Read My Biography</a>
         </div>
         <img src="" alt="">
     </div>
@@ -79,9 +81,9 @@
             <p>My favorite music, movies, and tv shows.</p>
         </div>
         <div class="favorite-cards">
-            <a href = "MediaPages/beats.html" class="favorite-card-item" id="beats">Music</a>
-            <a href = "MediaPages/film.html" class="favorite-card-item" id="films">Movies</a>
-            <a href = "MediaPages/tv.html" class="favorite-card-item" id="tv-shows">TV Shows</a>
+            <a href = "MediaPages/beats.html" class="favorite-card-item" id="beats"><i class="bi bi-music-note-beamed"></i>Music</a>
+            <a href = "MediaPages/film.html" class="favorite-card-item" id="films"><i class="bi bi-film"></i>Movies</a>
+            <a href = "MediaPages/tv.html" class="favorite-card-item" id="tv-shows"><i class="bi bi-tv"></i>TV Shows</a>
         </div>
     </div>
     <div class="purple-section coming-soon" id="talents-and-skills">
@@ -91,11 +93,11 @@
     
     <footer id="contact-info">
         <p>Contact Information:</p>
-        <div style="display:flex; flex-wrap:wrap; gap:20px">
-            <a href="mailto:obillomonandrei@ue.edu.ph">Email</a>
-            <a href="https://www.facebook.com/Mon.Andrei.Obillo">Facebook</a>
+        <div class="footer-links">
+            <a href="mailto:obillomonandrei@ue.edu.ph"><i class="bi bi-envelope"></i> Email</a>
+            <a href="https://www.facebook.com/Mon.Andrei.Obillo"><i class="bi bi-facebook"></i> Facebook</a>
         </div>
     </footer>
-    <a href="#" class="back-to-top" id="back-to-top">Back to Top &#8593;</a>
+    <a href="#" class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up-circle"></i> Back to Top</a>
 </body>
 </html>
