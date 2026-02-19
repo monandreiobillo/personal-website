@@ -72,6 +72,36 @@ a:hover {
     background: var(--cream);
 }
 
+a.image-link,
+a.image-link:link,
+a.image-link:visited,
+a.image-link:hover,
+a.image-link:active,
+a.image-link:focus,
+a.image-link:focus-visible,
+a.image-link:focus-within {
+    all: unset !important;
+    display: contents !important;
+    appearance: none !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    background: transparent !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    filter: none !important;
+    transform: none !important;
+    transition: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+a.image-link::before,
+a.image-link::after {
+    content: none !important;
+}
+
 i {
     padding-right: 10px;
 }
