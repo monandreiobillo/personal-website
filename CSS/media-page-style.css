@@ -80,6 +80,7 @@ a:hover {
 .content {
     padding: clamp(10px, 5vw, 1in);
     padding-top: 1in;
+    min-height: 100vh;
     background-color: #fffbf2;
     color: #4a4458;
     display: block;
@@ -222,41 +223,20 @@ a#contact-me:hover {
 }
 
 /* image gallery */
-.image-gallery {
+.media-container {
     column-count: 1;
     column-gap: 50px;
     max-width: 100%;
     column-fill: balance;
 }
 
-.image-gallery-item {
+.media-item {
     display: inline-block;
     margin-bottom: 10px;
     width: 100%;
     max-width: 500px;
     break-inside: avoid;
     padding: 10px;
-}
-
-.image-gallery-item:hover {
-    width: 102%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2),
-    0 6px 20px rgba(0,0,0,0.19);
-}
-
-.image-gallery-item img {
-    width: 100%;
-}
-
-.image-gallery-item figcaption {
-    text-align: left;
-    width: 100%;
-    font-size: 14px;
-}
-
-.image-gallery-item figcaption.source {
-    font-size: 10px;
-    color: #7f4f82;
 }
 
 /* back to top */
@@ -312,5 +292,5 @@ a.back-to-top {
     a#contact-me { margin-left: 0; }
 }
 
-@media (min-width: 540px) { .image-gallery { column-count: 2; } }
-@media (min-width: 792px) { .image-gallery { column-count: 3; } }
+@media (min-width: 540px) { .media-container { column-count: 2; } }
+@media (min-width: 792px) { .media-container { column-count: 3; } }
