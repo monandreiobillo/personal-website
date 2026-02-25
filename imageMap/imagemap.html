@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        area:hover {
-            border: 2px solid green;
-
-        }
-    </style>
+    <link rel="stylesheet" href="../CSS/blog-style.css">
 </head>
 <body>
-    <img src="imagemap.jpg" usemap="#dream-places" width="940" height="788">
-    <map name="dream-places">
-        <area shape="rect" coords="0,340,465,788" href="https://en.wikipedia.org/wiki/Broadway_(Manhattan)" alt="Broadway" target="Link">
-    </map>
+    <nav>
+        <div class="nav-logo">
+            <p>Mon Andrei Obillo</p>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+        <label for="menu-toggle" class="menu-symbol">
+            <i class="ph ph-list"></i> </label>
+        <div class="nav-links">
+            <a href="../index.html"><i class="bi bi-house"></i> Home</a>
+            <a href="../index.html#blogs"><i class="bi bi-journal-text"></i> Blogs</a>
+            <a href="../index.html#my-favorites"><i class="bi bi-star"></i> Favorites</a>
+            <a href="../Images/gallery.html"><i class="bi bi-images"></i> Gallery</a>
+            <a href="#contact-info" id="contact-me"><i class="bi bi-envelope"></i> Contact Me</a>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>My Dream Places</h1>
+        <img src="imagemap.jpg" usemap="#image-map" style="display:block;">
+
+        <map name="image-map">
+            <area target="" alt="Broadway" title="Broadway" href="https://en.wikipedia.org/wiki/Broadway_theatre" coords="319,268,938,785" shape="rect">
+            <area target="" alt="Rome" title="Rome" href="https://en.wikipedia.org/wiki/Rome" coords="800,110,147" shape="circle">
+            <area target="" alt="Athens" title="Athens" href="https://en.wikipedia.org/wiki/Athens" coords="72,552,4,617,2,783,295,782,295,625" shape="poly">
+            <area target="" alt="Japan" title="Japan" href="https://en.wikipedia.org/wiki/Japan" coords="300,266,213,283,163,343,102,314,4,363,4,519,298,518" shape="poly">
+            <area target="" alt="London" title="London" href="https://en.wikipedia.org/wiki/London" coords="618,154,566,116,535,147,523,1,451,1,444,123,411,87,371,91,340,65,236,72,207,113,147,118,105,14,59,104,27,81,10,111,2,243,615,241" shape="poly">
+        </map>
+    </div>
 </body>                
 </html>
