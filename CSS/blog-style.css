@@ -364,6 +364,30 @@ a.back-to-top {
     bottom: 42px;
 }
 
+/* back link */
+a.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #7f4f82;
+    border-radius: 2em;
+    background-color: #fffbf2;
+    color: #7f4f82;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+a.back-link:visited {
+    color: #7f4f82;
+}
+
+a.back-link:hover {
+    background-color: #7f4f82;
+    color: #fffbf2;
+}
+
 /* responsive */
 @media (max-width: 850px) {
 
