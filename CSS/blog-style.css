@@ -411,6 +411,12 @@ a.back-link:hover {
     color: var(--cream);
 }
 
+.other-blogs-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
 @media (max-width: 850px) {
 
     .menu-symbol { display: block; }
