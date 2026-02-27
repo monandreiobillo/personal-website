@@ -126,6 +126,10 @@ i {
     padding-right: 10px;
 }
 
+audio {
+    width: 100%;
+}
+
 .content {
     padding: clamp(10px, 5vw, 1in);
     padding-top: 1in;

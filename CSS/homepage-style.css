@@ -99,7 +99,7 @@ i {
 }
 
 .section-text {
-    width: 50%;
+    width: 500px;
     max-width: 80vh;
 }
 
@@ -328,6 +328,7 @@ a.blog-snippet-card:hover {
     font-size: 30px;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--cream);
 }
 
 .favorite-card-item i {
