@@ -1,12 +1,6 @@
-/* ======================================================
-   FONTS
-====================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
 
-/* ======================================================
-   VARIABLES
-====================================================== */
 :root {
     --purple: #3b2349;
     --purple-light: #7f4f82;
@@ -19,9 +13,6 @@
     --font-heading: "Spectral", Georgia, serif;
 }
 
-/* ======================================================
-   RESET
-====================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,9 +21,6 @@
 
 html { scroll-behavior: smooth; }
 
-/* ======================================================
-   BASE ELEMENT STYLES (Low Specificity)
-====================================================== */
 body {
     font-family: var(--font-body);
 }
@@ -65,7 +53,6 @@ a {
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Base link states */
 a:hover {
     border: 1px solid var(--purple);
     color: var(--purple);
@@ -106,9 +93,6 @@ i {
     padding-right: 10px;
 }
 
-/* ======================================================
-   LAYOUT PRIMITIVES
-====================================================== */
 .space-buffer {
     height: 70px;
     background: var(--purple);
@@ -119,9 +103,6 @@ i {
     max-width: 80vh;
 }
 
-/* ======================================================
-   SECTION LAYOUTS
-====================================================== */
 .purple-section,
 .cream-section {
     width: 100%;
@@ -147,9 +128,6 @@ i {
     background: var(--cream);
 }
 
-/* ======================================================
-   COMPONENT: NAVIGATION
-====================================================== */
 nav {
     position: fixed;
     width: 100%;
@@ -185,7 +163,6 @@ nav a:hover {
     color: var(--cream);
 }
 
-/* Special nav variant */
 .contact-me {
     margin: 16px 0;
     color: var(--purple) !important;
@@ -202,7 +179,6 @@ nav a:hover {
     background: var(--purple);
 }
 
-/* Mobile nav */
 .menu-checkbox { display: none; }
 
 .menu-symbol {
@@ -212,9 +188,6 @@ nav a:hover {
     color: var(--cream);
 }
 
-/* ======================================================
-   COMPONENT: FOOTER
-====================================================== */
 footer {
     width: 100%;
     display: flex;
@@ -262,9 +235,6 @@ footer a:hover {
     gap: 20px;
 }
 
-/* ======================================================
-   COMPONENT: BLOG CARDS
-====================================================== */
 .blog-snippets {
     display: flex;
     flex-wrap: wrap;
@@ -352,9 +322,6 @@ a.blog-snippet-card:hover {
     vertical-align: middle;
 }
 
-/* ======================================================
-   COMPONENT: BACK TO TOP
-====================================================== */
 a.back-to-top {
     position: fixed;
     bottom: 40px;
@@ -380,9 +347,6 @@ a.back-to-top {
     bottom: 42px;
 }
 
-/* ======================================================
-   PAGE-SPECIFIC: START PAGE
-====================================================== */
 #start-page {
     display: flex;
     justify-content: center;
@@ -431,9 +395,6 @@ a.back-to-top {
     display: block;
 }
 
-/* ======================================================
-   PAGE-SPECIFIC: BLOG SECTION
-====================================================== */
 #blogs {
     flex-direction: column;
     scroll-margin-top: 70px;
@@ -445,9 +406,6 @@ a.back-to-top {
 
 #blogs h1 { text-align: center; }
 
-/* ======================================================
-   STATE MODIFIERS
-====================================================== */
 .coming-soon {
     display: flex;
     flex-direction: column;
@@ -493,9 +451,6 @@ a.back-to-top {
     margin: 0;
 }
 
-/* ======================================================
-   RESPONSIVE (Highest in Cascade)
-====================================================== */
 @media (max-width: 850px) {
 
     .menu-symbol { display: block; }
