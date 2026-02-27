@@ -125,6 +125,17 @@ i {
     padding-right: 10px;
 }
 
+ul.bucket-list {
+    list-style-type: square;
+}
+
+ul.bucket-list li {
+    padding: 20px;
+    border: 1px solid var(--purple-light);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
 .content {
     padding: clamp(10px, 5vw, 1in);
     padding-top: 1in;
@@ -301,7 +312,7 @@ a#contact-me:hover {
 }
 
 .content .blog-img {
-    width: 450px;
+    width: 350px;
     padding: 20px;
     float: right;
     clear: right;
