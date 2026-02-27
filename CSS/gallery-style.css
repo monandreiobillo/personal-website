@@ -118,6 +118,10 @@ a.image-link::after {
     content: none !important;
 }
 
+i {
+    padding-right: 10px;
+}
+
 .content {
     padding: clamp(10px, 5vw, 1in);
     padding-top: 1in;
@@ -136,8 +140,6 @@ nav {
     gap: 16px;
     background: var(--purple);
     padding: 20px;
-    box-shadow: 0 8px 16px var(--shadow-1),
-    0 6px 20px var(--shadow-2);
 }
 
 nav p {
@@ -293,19 +295,21 @@ a#contact-me:hover {
 
 footer {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    padding-top: 30px;
+    text-align: center;
+    padding: 30px;
     background: var(--purple);
+    border-top: 1px solid var(--purple-light);
 }
 
 footer p {
     font-size: 20px;
     color: var(--cream);
     margin: 0;
+    text-align: center;
+    text-indent: 0;
 }
 
 footer a {
@@ -313,12 +317,12 @@ footer a {
     font-size: 16px;
     letter-spacing: 1px;
     font-weight: 500;
-    text-decoration: underline;
     padding: 10px 16px;
     margin: 24px 0;
     border-radius: 2em;
     color: var(--cream);
     background: var(--purple);
+    border: 1px solid var(--cream);
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -335,7 +339,21 @@ footer a:hover {
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.footer-logo p {
+    font-family: var(--font-heading);
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: var(--cream);
+    margin-bottom: 20px;
 }
 
 a.back-to-top {
