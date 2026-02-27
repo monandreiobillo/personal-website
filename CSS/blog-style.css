@@ -300,6 +300,35 @@ a#contact-me:hover {
     color: var(--purple-light);
 }
 
+.content .blog-img {
+    width: 450px;
+    padding: 20px;
+    float: right;
+    clear: right;
+}
+
+.content .blog-img img {
+    width: 100%;
+}
+
+.content .blog-img p {
+    font-size: 14px;
+    color: var(--purple-mid);
+    text-align: center;
+    text-indent: 0;
+}
+
+.content .blog-img .source {
+    font-size: 14px;
+    color: var(--purple-light);
+}
+
+.content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 footer {
     width: 100%;
     display: block;
